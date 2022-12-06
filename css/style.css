@@ -1,4 +1,7 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
 *{
+    font-family: 'Poppins', sans-serif;
     margin: 0px;
     padding: 0px;
 }
@@ -126,12 +129,25 @@ main .banner-section{
 }
 .another-section{
     display: flex;
-    flex-direction: row;justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     padding: 8rem 15rem;
 }
 .section-one{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: -15px;
+    padding-left: 10px;
+    padding-right: 25px;
+}
+.section-two{
     width: 50%;
+    border-left: 1px solid black;
+    margin-top: 15px;
+    padding-left: 50px;
 }
  h3{
    font-size: 35px;
@@ -144,20 +160,96 @@ h5{
 }
 p{
     font-size: 20px;
+    margin-bottom: 20px;
 }
 .pragraph{
-    text-align: center;
+    margin-top: 10px;
 }
-.heading-5{
-    text-align: center; 
-}
+
 .link{
-    background-color: #1260c5;
+    background-color: #c56312;
     width: 100%;
-    height: 80px;
+    height: 50px;
     text-decoration: none;
-    margin-right: 20px;
-    padding: 15px;
+    padding-top: 15px;
+    font-size: 20px;
+    text-align: center;
     color: #fff;
+   border-radius: 8px;
+}
+.trainer{
+    background: #f9f9f9;
+   padding: 8rem;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+.about{
+    width: 39%;
+    
+}
+.about h2{
+    color: #212529;
+    font-size: 2.1rem;
+    padding-bottom: 1.1rem;
+}
+.about p{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    
+}
+.people{
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.people .team-1{
+    
+    width: 45%;
+    height: auto;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow:
+    1.9px 4.5px 3.6px rgba(0, 0, 0, 0.026),
+    5.3px 12.5px 10px rgba(0, 0, 0, 0.04),
+    12.7px 30.1px 24.1px rgba(0, 0, 0, 0.056),
+    42px 100px 80px rgba(0, 0, 0, 0.09)
+  ;
+}
+
+.people .team-1 .img img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.people .team-1 .name, .people .team-1 .profesion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+}
+.people .team-1 .name h4{
+    color: #212529;
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+.people .team-1 .profesion p{
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    padding-left: 10px;
+}
+.image{
+    width: 25%;
+    height: 50%;
+    padding: 15px;
+}
+.icon{
+    color: #212529;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    cursor: pointer;
+    padding-right: 10px;
 }
