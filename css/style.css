@@ -70,7 +70,7 @@ main{
     
 }
 main .banner-section{
-   background-image: url('../images/class2.jpg');
+   background-image: url('../images/background1.jpg');
     width: 100%;
     height: 150vh;
     background-size: cover;
@@ -85,7 +85,7 @@ main .banner-section{
 }
 .text{
     position: absolute;
-    top: 25%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -96,7 +96,7 @@ main .banner-section{
 }
 .text h1{
     color: #fff;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
 }
 .btn{
     background: none;
@@ -167,7 +167,7 @@ p{
 }
 
 .link{
-    background-color: #c56312;
+    background-color: #c79c11;
     width: 100%;
     height: 50px;
     text-decoration: none;
@@ -223,7 +223,7 @@ p{
 .people .team-1 .img img{
     width: 100%;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 8px 8px 0px 0px;
 }
 .people .team-1 .name, .people .team-1 .profesion{
     display: flex;
@@ -252,4 +252,63 @@ p{
     font-weight: bolder;
     cursor: pointer;
     padding-right: 10px;
+}
+.class{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 8rem;
+}
+.paragraph{
+    margin-bottom: -3px;
+    font-size: 1.3rem;
+    color: #95a5a6;
+    text-align: center;
+}
+.h2{
+    font-size: 2.2rem;
+    color: #222;
+    font-weight: 700;
+}
+.classItems{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.classItem .img img{
+    width: 100%;
+    height: 25%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.classMenu{
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+    1.9px 4.5px 3.6px rgba(0, 0, 0, 0.026),
+    5.3px 12.5px 10px rgba(0, 0, 0, 0.04),
+    12.7px 30.1px 24.1px rgba(0, 0, 0, 0.056),
+    42px 100px 80px rgba(0, 0, 0, 0.09)
+  ;
+}
+.num h5{
+   background-color: #f80a0a;
+   padding: 10px;
+   border-radius: 100%;
+}
+.classMenuContainer{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.teamDetails{
+    padding: 15px;
 }
