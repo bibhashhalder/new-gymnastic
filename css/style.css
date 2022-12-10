@@ -37,22 +37,29 @@
    
     
 }
-menu{
+#menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.nav #bar{
+    display: none;
+}
 .icon{
     margin: 10px;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 15px;
 }
+#icon{
+    color: #fff;
+}
+
 .nav ul li{
    
     list-style: none;
-    margin: 15px;
+    margin: 0px;
     text-align: center;
-    padding: 8px;
+    padding: 0px;
     
 }
 .nav ul li a{
@@ -63,6 +70,7 @@ menu{
 }
 
 /* header section end */
+/* main section  start */
 main{
     position: sticky;
     left: 0px;
@@ -96,24 +104,26 @@ main .banner-section{
 }
 .text h1{
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 4rem;
+    font-weight: 400;
 }
 .btn{
     background: none;
     color: #ffffff;
+    font-size: 0.9rem;
     border: 0px;
     width: 15%;
     height: 35px;
     padding: 2px;
 }
 #btn{
-    background: #fbff0085;
+    background: none;
     border: 1px solid #ffd700;
     border-radius: 8px;
     width: 15%;
     height: 35px;
     padding: 2px;
-    color: rgb(6, 29, 236);
+    color: #ffffff;
 }
 .btn:hover{
     background-color: #0ac0b1;
@@ -179,7 +189,7 @@ p{
 }
 .trainer{
     background: #f9f9f9;
-   padding: 8rem;
+   padding: 6rem;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -196,7 +206,7 @@ p{
 }
 .about p{
     color: #7f8c8d;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     
 }
 .people{
@@ -299,7 +309,7 @@ p{
   ;
 }
 .num h5{
-   background-color: #f80a0a;
+   background-color: #f8550a;
    padding: 10px;
    border-radius: 100%;
 }
@@ -311,4 +321,472 @@ p{
 }
 .teamDetails{
     padding: 15px;
+}
+.contactform{
+    padding: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.form{
+    width: 40%;
+}
+ .form h2{
+    font-size: 2rem;
+    color: #212529;
+    padding-bottom: 10px;
+    width: 100%;
+}
+.subimt{
+    display: flex;
+    flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   border: 1px solid #000000;
+   margin-top: 25px;
+   padding: 25px;
+   padding-right: 50px;
+   padding-left: 20px;
+   border-radius: 8px;
+}
+.input{
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+#input{
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+.linkItem{
+    width: 103%;
+    background-color: #f8550a;
+    margin-top: 15PX;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: large;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+.fa{
+    color: rgb(248, 7, 7);
+}
+.footer{
+    background-color: #212529;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.copyritePragraph{
+    font-size: 0.5rem;
+    color: #fff;
+   }
+.contactLink{
+    font-size: 0.9rem;  
+    color: #d9deee;
+}
+.contactLink>i{
+    color: #ffffff;
+}
+@media screen and (max-width: 1042px){
+  
+.nav{
+   padding-right:1rem;
+   padding-left: 1rem;
+}
+.nav img{
+    width: 80px;
+    height: 80px;
+}
+.nav ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+   
+    
+}
+#menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon{
+    margin: 10px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.nav ul li{
+   
+    list-style: none;
+    margin: 15px;
+    text-align: center;
+    padding: 8px;
+    
+}
+.nav ul li a{
+    text-decoration: none;
+    font: size 0.05rem;;
+    color: #ffffff;
+    
+}
+.btn:hover{
+    background-color: #0ac0b1;
+   
+}
+#btn:hover{
+    background-color: #ffe4c4;
+    
+   
+}
+
+}
+@media screen and (max-width: 991px){
+   
+   
+.nav{
+   padding-right: 1rem 3rem;
+}
+.nav img{
+    width: 80px;
+    height: 80px;
+}
+.nav ul{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+#menu{
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    width: 300px;
+    height: 80vh;
+    top: 0px;
+    right: -300px;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100000;
+    margin-top: 5rem;
+    transition: 0.5s;
+}
+
+.nav #bar{
+    padding-top: 1.8rem;
+    padding-right: 1.8rem;
+    display: initial;
+    cursor: pointer;
+}
+.icon{
+    margin: 10px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.nav ul li{
+  padding: 4px 0px; 
+}
+.nav ul li a{
+    font-size: 1rem;
+}  
+main{
+    position: sticky;
+    left: 0px;
+    right: 0px;
+    
+}
+main .banner-section{
+   background-position: 100%;
+}
+.overlay{
+    background: #0a0a0aec;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+.text{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text p{
+    color: #7f8c8d;
+    font-size: 1.5rem;
+}
+.text h1{
+    color: #fff;
+    font-size: 2.9rem;
+}
+.btn{
+    width: 25%;
+    font-size: 0.7rem;
+}
+#btn{
+    width: 25%;
+    font-size: 0.7rem;
+    color: #fff;
+}
+.btn:hover{
+    background-color: #0ac0b1;
+    
+}
+#btn:hover{
+    background-color: #ffe4c4;
+}
+.another-section{
+    padding: 4rem;
+}
+.trainer{
+    padding: 4rem;
+}
+.trainer>.about{
+    width: 30%;
+}
+.trainer>.about>h2{
+    font-size: 1.5rem;
+}
+.trainer>.about>p{
+    font-size: 0.95rem;  
+}
+.trainer>.people{
+    width: 65%;
+}
+.class{
+    padding: 4rem;
+}
+.class>.classMenuContainer>h4{
+ font-size: 1rem;
+}
+.strongPragraph{
+    font-size: 0.9rem;
+}
+.classDetailsPragraph{
+    font-size: 0.9rem;
+}
+.contactform{
+    padding: 4rem;
+}
+.contactform>.form{
+    width: 40%;
+}
+.contactform>.form>h2{
+    font-size: 1.7rem;
+}
+.contactform>.map{
+    width: 55%;
+}
+.contactform>.map>h2{
+    font-size: 1.7rem;
+}
+.contactform>.map>p{
+    font-size: 0.85rem;
+}
+}
+@media screen and (max-width: 768px){ 
+    .banner-section{
+        background-position: 100%;
+    }
+    .text{
+        width: 80%;
+    }
+     .text>p{
+        font-size: 0.9rem;
+     }
+     .text>h1{
+        font-size: 2.3rem;
+     }
+     .btn{
+        width: 25%;
+       font-size: 0.6rem;
+     }
+     #btn{
+        width: 25%;
+        font-size: 0.6rem;
+     }
+     .another-section{
+        
+        padding: 1.5rem;
+    }
+    .heading-5{
+        font-size: 1.6rem;
+    }
+    .heading-6{
+        font-size: 1rem;
+    }
+   .trainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+   }
+   .trainer>.about{
+    width: 90%;
+}
+.trainer>.about>h2{
+    font-size: 1.8rem;
+}
+.trainer>.about>p{
+    font-size: 1rem;  
+}
+.trainer>.people{
+    width: 90%;
+}
+.class{
+    padding: 1.5rem;
+}
+.classMenu{
+    width: 32%;
+}
+.yoga{
+ font-size: 1.5rem;
+}
+.strongPragraph{
+    font-size: 0.7rem;
+}
+.classDetailsPragraph{
+    font-size: 0.9rem;
+}
+.contactform{
+    padding: 1.5rem;
+}
+.contactform>.form{
+    width: 40%;
+}
+.contactform>.form>h2{
+    font-size: 1.2rem;
+}
+.contactform>.map{
+    width: 55%;
+}
+.contactform>.map>h2{
+    font-size: 1.2rem;
+}
+.contactform>.map>p{
+    font-size: 0.85rem;
+}
+    
+}
+@media screen and (max-width: 496px){
+    .banner-section{
+        background-position: 100%;
+    }
+    .text{
+        width: 80%;
+    }
+     .text>p{
+        font-size: 0.9rem;
+     }
+     .text>h1{
+        font-size: 2.3rem;
+     }
+     .btn{
+        width: 25%;
+       font-size: 0.6rem;
+     }
+     #btn{
+        width: 25%;
+        font-size: 0.6rem;
+     }
+     .another-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2.5rem;
+    }
+    .section-one{
+        width: 100%;
+    }
+    .section-two{
+        text-align: center;
+        width: 90%;
+        border-top: 1px solid gray;
+        border-left: none;
+    }
+    .heading-5{
+        font-size: 1rem;
+    }
+    .h3{
+        font-size: 1.5rem;
+    }
+    .heading-6{
+        font-size: 1rem;
+    }
+   .trainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 5rem;
+   }
+   .trainer>.about{
+        width: 100%;
+    }
+    .trainer>.about>h2{
+        font-size: 1.8rem;
+    }
+    .trainer>.about>p{
+        font-size: 1rem;  
+    }
+    .trainer>.people{
+        
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+    .trainer>.people>.team-1{
+        width: 100%;
+        margin-top: 1rem;
+        
+    }
+    .class{
+        padding: 1.5rem;
+    }
+    .classMenuContainer{
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 5rem;
+    }
+    .classMenu{
+        width: 100%;
+        margin-top: 1rem;
+    }
+  
+    .yoga{
+    font-size: 1.5rem;
+    }
+    .strongPragraph{
+        font-size: 0.7rem;
+    }
+    .classDetailsPragraph{
+        font-size: 0.9rem;
+    }
+    .contactform{
+        padding: 1.5rem;
+    }
+    .contactform>.form{
+        width: 40%;
+    }
+    .contactform>.form>h2{
+        font-size: 1.2rem;
+    }
+    .contactform>.map{
+        width: 55%;
+    }
+    .contactform>.map>h2{
+        font-size: 1.2rem;
+    }
+    .contactform>.map>p{
+        font-size: 0.85rem;
+    }  
 }
